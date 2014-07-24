@@ -9,12 +9,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -38,9 +32,10 @@ body {
 
 /* Custom page footer */
 .footer {
-    padding-top: 19px;
     color: #777;
-    border-top: 1px solid #e5e5e5;
+    background: #f8f8f8;
+    padding:20px 8px;
+    text-align:center;
 }
 
 .container-narrow > hr {
@@ -68,7 +63,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        /*max-width: 730px;*/
     }
 
     /* Remove the padding we set earlier */
@@ -89,3 +84,156 @@ body {
         border-bottom: 0;
     }
 }
+
+body {background: #eee;}
+img {display: block;}
+a:link, a:hover {color: #63b3fb;}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }
+
+/*float*/
+.pull-left {float: left;}
+.pull-right {float: right;}
+
+/*common classes*/
+.mtop25 {margin-top: 25px;}
+
+/*=btn style=======*/
+.btn { border-radius: 3px; padding: 6px 10px; text-decoration: none; color: #fff; filter:alpha(opacity=80);-moz-opacity:.8;-khtml-opacity:.8;opacity: .8;}
+.btn:hover {filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1;opacity: 1;color:#fff;}
+.btn-green { background: #7dba00; }
+.btn-orange { background: #63b3fb; }
+.btn-gray { background: #ccc; }
+
+/*page-container*/
+.container {
+    width:1025px;
+    background: #f8f8f8;
+    padding: 0;
+}
+
+/*left-menu, navigation*/
+.leftmenu {
+    width:190px;
+    float: left;
+    background-color:#f6f6f6;
+}
+.leftmenu .logo {
+    height:146px;
+    background: url(../images/logo.jpg) left top no-repeat;
+}
+.leftmenu .contact {margin-top: 20px;}
+.leftmenu .follow {text-align: center;margin:10px 0;}
+.leftmenu .follow .follow-body {margin:0 auto;display:inline-block;}
+.leftmenu .follow .follow-body a {float: left;margin: 3px;}
+.leftmenu .search {border:1px solid #f2f2f2;border-left:0;border-right:0;background:#f9f9f9;height:50px;}
+.leftmenu .search input {height:35px;margin:7px 0;width:100%;border:0;outline:none;padding:6px 15px;background:#f9f9f9;}
+
+.nav>li>a {padding:15px 15px 15px 35px;font-size: 16px;}
+.nav .cn {color:#333;}
+.nav .en {color:#ccc;margin-left: 6px;}
+.nav .current a, .nav .current .cn, .nav .current .en {color:#63b3fb;}
+/*page-right-body*/
+.main-body {
+    float: left;
+    padding: 25px;
+    width: 835px;
+    background:#fff;
+}
+
+.slider {
+    position:relative;
+    width:580px;
+
+    .text {
+        position:absolute;
+        bottom:0;
+        padding:0 20px;
+        font-size:18px;
+        color:#F0E7E7;
+        height:45px;
+        line-height:45px;
+        overflow:hidden;
+    }
+}
+
+.slider .text-bg {
+    position:absolute;
+    bottom:0;
+    height:45px;
+    line-height:45px;
+    background:#000;
+    opacity:.5;
+    width:100%;
+}
+
+.slider-small img{width:185px;height: 125px;}
+
+/*normal box*/
+.normal-box-no-pad { border: none; background: #fff; margin-bottom: 20px;}
+.normal-box-no-pad h2 {color:#555;border-bottom: 2px solid #eee;height:32px;font-size: 20px;margin-bottom: 15px;}
+.normal-box-no-pad h2 strong {border-bottom: 2px solid #63b3fb;line-height: 30px;display: inline-block;}
+.normal-box-no-pad h2 a { font-size: 14px;  }
+.normal-box-no-pad h2 a.btn { padding: 2px 4px; color: #fff;}
+.normal-box-no-pad .list-tit { padding:  20px 30px 10px; border-bottom: 1px solid #dfdfdf; }
+.list-tit { font-size: 16px; padding-top: 30px; }
+.list-tit b { margin-left: 8px; font-size: 14px; }
+.list-tit a, .list-tit a:link { color: #aaa; font-weight: normal;}
+.list-tit a:hover { background: none; color: #f60; } 
+
+/*=media style=======*/
+.media, .media-body { overflow: hidden; *overflow: visible; zoom: 1; }
+.media, .media .media {margin: 22px 0;padding-bottom: 22px;border-bottom: 1px solid #efefef;}
+.media:first-child { margin-top: 0; }
+.media-object { display: block; }
+.media-heading { margin: 0 0 5px; }
+.media > .pull-left { margin-right: 10px; }
+.media > .pull-right { margin-left: 10px; }
+.media .extra {margin:-15px 0 0;color:#aaa;font-size: 12px;}
+.media .extra .tags {margin-left: 30px;}
+.media .extra .tags a {color:#aaa;}
+.media-list { margin-left: 0; list-style: none; }
+.media .media-body .pull-right img {margin-left: 10px;}
+
+.item-list .media-tit, .item-list .media-tit { font-size: 22px; font-weight: bold; font-family: "Microsoft YaHei",SimSun, Arial, sans-serif; color: #666; text-decoration: none; }
+.media-tit:hover { color: #63b3fb; background: none; }
+.item-info {color:#8c8c8c;}
+
+/*block title*/
+.block-title {font-size:18px;color:#a8a8a8;}
+.block-title-prefix {background:rgb(135,195,252);color:#fff;font-size:12px;padding:0 7px;height:22px;line-height:22px;float:left;}
+.arrow-right {width: 0px;height: 0px;font-size: 0;display: block;border: 5px solid;border-color: transparent transparent transparent rgb(135,195,252);}
+
+/*company-list*/
+.company-list { padding-top: 20px; padding-bottom: 10px; margin-left: 10px; }
+.company-list .hover { background: #f8f8f8; }
+.company-list .company-list-item .company-list-tit { margin-bottom: 10px; }
+.company-list .hover .company-list-tit a { color: #f60; }
+.company-list .hover .company-list-tit .pull-right a:hover { color: #fff; }
+.person-list .hover .media-tit, .person-list .hover .media-tit:link { color: #f60; }
+.company-list .company-list-item {  margin-right: 30px; margin-bottom: 20px; float: left; width: 160px; padding: 10px;  overflow: hidden; margin-top: 0;}
+
+/*person*/
+#person-list .media {height: 130px;margin-bottom: 20px;float: left;width: 195px;padding: 10px;overflow: hidden;margin-top: 0;border:none;}
+.person-list {margin-top: 15px;}
+
+/*activity*/
+.activity-top-list {padding: 0;}
+.activity-top-list li{float: left;width: 245px;margin:0 5px;}
+.activity-top-list img {width: 245px;height:145px;}
+.activity-top-list .text, .activity-top-list .text-bg {height: 35px;line-height: 35px;}
+.activity-top-list .text {font-size: 14px;padding: 0 6px;color:#fff;}
+.activity-top-list .text a {color:#fff;}
+
+.activity-list .media img {margin: 0 15px;}
+.activity-list .media .activity-extra {margin-top: 15px;font-size: 14px;}
+.activity-list .media .activity-extra span {margin-right: 20px;}
+
+
+
+
+
+
